@@ -1,0 +1,134 @@
+.app {
+  min-height: 100vh;
+  background: #0d0d1a;
+  color: #e0e0f0;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: #12121f;
+  border-bottom: 1px solid #1e1e30;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.app-titulo {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e0e0ff;
+  letter-spacing: -0.02em;
+}
+
+.ultima-act {
+  font-size: 0.75rem;
+  color: #5a5a7a;
+}
+
+.btn-actualizar {
+  background: #2a2a3e;
+  border: 1px solid #3a3a5a;
+  color: #c0b8ff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-actualizar:hover:not(:disabled) {
+  background: #3a3a5a;
+  border-color: #7c6af7;
+  color: #fff;
+}
+
+.btn-actualizar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.errores-banner {
+  margin: 1rem 2rem 0;
+  padding: 0.7rem 1rem;
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: #f87171;
+}
+
+.app-main {
+  padding: 1.5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-section {
+  margin-top: 0.5rem;
+}
+
+/* Skeleton cards */
+.stock-card-skeleton {
+  background: #1e1e2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  animation: pulse 1.5s infinite;
+}
+
+.sk-ticker {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3a3a5a;
+  margin-bottom: 0.3rem;
+}
+
+.sk-nombre {
+  font-size: 0.78rem;
+  color: #2a2a3e;
+  margin-bottom: 0.8rem;
+}
+
+.sk-precio {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2a2a3e;
+  margin-bottom: 0.4rem;
+}
+
+.sk-cambio {
+  font-size: 0.88rem;
+  color: #2a2a3e;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@media (max-width: 640px) {
+  .app-header { padding: 1rem; }
+  .app-main { padding: 1rem; }
+  .cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
