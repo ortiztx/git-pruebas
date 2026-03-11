@@ -1,0 +1,116 @@
+.stock-chart {
+  background: #1e1e2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.chart-titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e0e0f0;
+  margin: 0 0 0.2rem 0;
+}
+
+.chart-ticker {
+  font-size: 0.78rem;
+  color: #6b6b8a;
+  letter-spacing: 0.08em;
+}
+
+.chart-precio-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+
+.chart-precio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f0f0ff;
+}
+
+.chart-cambio {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.chart-cambio.pos { color: #4ade80; }
+.chart-cambio.neg { color: #f87171; }
+
+.rango-selector {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.rango-btn {
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  border: 1px solid #2a2a3e;
+  background: transparent;
+  color: #8888aa;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.rango-btn:hover {
+  border-color: #7c6af7;
+  color: #c0b8ff;
+}
+
+.rango-btn.activo {
+  background: #7c6af7;
+  border-color: #7c6af7;
+  color: #fff;
+}
+
+.chart-area {
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-overlay {
+  color: #8888aa;
+  font-size: 0.9rem;
+}
+
+.chart-overlay.error {
+  color: #f87171;
+}
+
+.tooltip-custom {
+  background: #13131f;
+  border: 1px solid #2a2a3e;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+}
+
+.tooltip-fecha {
+  font-size: 0.75rem;
+  color: #6b6b8a;
+  margin: 0 0 0.2rem 0;
+}
+
+.tooltip-precio {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e0e0f0;
+  margin: 0;
+}
